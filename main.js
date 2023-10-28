@@ -51,7 +51,7 @@ form.addEventListener('submit', function(e){
         
         const finalAverage = calculateFinalAverage()
 
-        document.getElementById('finalAverageValue').innerHTML = finalAverage
+        document.getElementById('finalAverageValue').innerHTML = finalAverage.toFixed(2)
         document.getElementById('finalAverageResult').innerHTML = finalAverage >= minimumNote ? approvedSpan : failedSpan
     }
 
